@@ -8,16 +8,41 @@ CLASES PROPIAS
 */
 
 
-#--logoAP{
+#--logoAP {
     width: 150px;
 }
 
-nav{
+.--navREDES {
+    align-items: center;
+}
+
+.--btnREDES i {
+    font-size: 26px;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #1e1f1c;
+    color: #ececec;
+    border-radius: 100%;
+}
+
+.--btnREDES i:hover {
+    font-size: 26px;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #ececec;
+    color: #1e1f1c;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+nav {
     background-color: #1e1f1c;
 }
 
-@media (max-width: 600px){
-    #--logoAP{
+@media (max-width: 600px) {
+    #--logoAP {
         width: 100px;
     }
 }

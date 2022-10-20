@@ -12,24 +12,28 @@
         </button>
     
         <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-end ms-6">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav --navREDES">
                 <!-- INICIO LOGOS REDES -->
                 <li class="nav-item pr-3">
-                    <a class="nav-link" (click)="isMenuCollapsed = true" href="https://github.com/jc-projects" target="_blank" class="nav-link">
-                        <i class="fa-brands fa-github fa-2x"></i>
+                    <a class="nav-link --btnREDES" (click)="isMenuCollapsed = true" href="https://github.com/jc-projects" target="_blank">
+                        <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li class="nav-item pr-3">
-                    <a class="nav-link" (click)="isMenuCollapsed = true" href="https://www.instagram.com/einenko" target="_blank" class="nav-link">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    <a class="nav-link --btnREDES" (click)="isMenuCollapsed = true" href="https://www.instagram.com/einenko" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </li>
                 <!-- FIN LOGOS REDES -->
                 
                 <!-- INICIO BOTON LOGIN -->
                 <li class="nav-item active">
-                    <button type="button" class=" btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
-                    <button type="button" class=" btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
+                    <button type="button" class=" btn btn-outline-light" (click)="login()" *ngIf="!isLogged">
+                        <span class="-fontVIOLETA fw-bold">#</span><span class="-fontAMARILLO fw-bold">ingresar</span>
+                    </button>
+                    <button type="button" class=" btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">
+                        <span class="-fontVIOLETA fw-bold">#</span><span class="-fontAMARILLO fw-bold">salir</span>
+                    </button>
                 </li>
                 <!-- FIN BOTON LOGIN -->
             </ul>
