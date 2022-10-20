@@ -1,0 +1,33 @@
+<div class="row -rowESTILO">
+  <!-- INICIO FOTO DE PERFIL -->
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <img src="{{persona.img}}" alt="Foto de perfil" class="img-fluid --fotoPerfil">
+  </div>
+  <!-- FIN FOTO DE PERFIL -->
+
+  <!-- INICIO DATOS -->
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+      <p>{{persona.titulo}}</p>
+  </div>
+  <!-- FIN DATOS -->
+
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!-- INICIO BOTON EDITAR -->
+    <div class="float-end" *ngIf="isLogged">
+      <a href="#" class="-btnCRUD" routerLink="/acerca-edit/1">
+        <i class="fa fa-pen"></i>
+      </a>
+    </div>
+    <!-- FIN BOTON EDITAR -->
+
+      <!-- INICIO TITULO -->
+      <span>
+        <h2><span class="-fontVIOLETA">.</span><span class="-fontAMARILLO">acerca de mi</span></h2>
+        <p class="--acercaDe">
+          {{persona.descripcion}}
+        </p>
+      </span>
+      <!-- FIN TITULO -->
+  </div>
+</div>

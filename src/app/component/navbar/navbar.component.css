@@ -1,0 +1,23 @@
+/*
+CLASES PROPIAS
+---------------
+
+-tipoCARACTERISTICA: con un - se encuentra en styles.css. Por ej: -fontVIOLETA
+--tipoCARACTERISTICA: con dos - se encuentra en el css de ese componente --modHEADER
+
+*/
+
+
+#--logoAP{
+    width: 150px;
+}
+
+nav{
+    background-color: #1e1f1c;
+}
+
+@media (max-width: 600px){
+    #--logoAP{
+        width: 100px;
+    }
+}

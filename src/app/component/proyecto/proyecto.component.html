@@ -1,0 +1,58 @@
+<div class="row -rowESTILO --rowPr">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <!-- INICIO BOTON AGREGAR -->
+    <div class="float-end" *ngIf="isLogged">
+      <a href="#" class="-btnCRUD" routerLink="/proyecto-new">
+        <i class="fas fa-plus"></i>
+      </a>
+    </div>
+    <!-- FIN BOTON AGREGAR -->
+
+    <!-- INICIO TITULO -->
+    <h2>
+      <span class="-fontVIOLETA">.</span>
+      <span class="-fontAMARILLO">proyectos</span>
+    </h2>
+    <!-- FIN TITULO -->
+  </div>
+
+  <!-- INICIO LISTA --> 
+  <dl *ngFor="let proyecto of proyectoArray">
+    <div class="row -mb18PX">
+
+      <!-- INICIO DATOS -->
+      <!-- Si esta log ocupa 7 columnas -->
+      <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7" *ngIf="isLogged">
+        <dt class="--tituloPr">{{proyecto.tituloPr}}</dt>
+        <dd class="fst-italic -mb18PX">{{proyecto.descripcionPr}}</dd>
+      </div>
+      <!-- Si no esta log ocupa 8 columnas -->
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8" *ngIf="!isLogged">
+        <dt class="--tituloPr">{{proyecto.tituloPr}}</dt>
+        <dd class="fst-italic -mb18PX">{{proyecto.descripcionPr}}</dd>
+      </div>
+      <!-- INICIO IMAGEN Y LINK REPO -->
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1">
+        <a href="{{proyecto.repositorio}}">
+          <img src="{{proyecto.imgPr}}" class="img-fluid --imgPr" alt="">
+        </a>
+      </div>
+      <!-- FIN IMAGEN Y LINK REPO -->
+      <!-- FIN DATOS -->
+
+      <!-- BOTON EDITAR Y BORRAR -->
+      <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" *ngIf="isLogged">
+        <div class="float-end">
+          <a href="#" class="-btnCRUD" routerLink="/proyecto-edit/{{proyecto.id}}">
+            <i class="fa fa-pen"></i>
+          </a>
+          <a href="#" class="-btnCRUD" (click)="delete(proyecto.id)">
+            <i class="fas fa-trash-alt"></i>
+          </a>
+        </div>          
+      </div>  
+      <!-- FIN EDITAR Y BORRAR -->
+    </div>
+  </dl>
+</div>

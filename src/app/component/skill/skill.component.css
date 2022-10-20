@@ -1,0 +1,14 @@
+/*
+CLASES PROPIAS
+---------------
+
+-tipoCARACTERISTICA: con un - se encuentra en styles.css. Por ej: -fontVIOLETA
+--tipoCARACTERISTICA: con dos - se encuentra en el css de ese componente --modHEADER
+
+*/
+
+.--circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

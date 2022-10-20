@@ -1,0 +1,103 @@
+/*
+CLASES PROPIAS
+---------------
+
+-tipoCARACTERISTICA: con un - se encuentra en styles.css. Por ej: -fontVIOLETA
+--tipoCARACTERISTICA: con dos - se encuentra en el css de ese componente --modHEADER
+
+*/
+
+div {
+    text-align: left;
+}
+
+.--acercaDe {
+    text-align: justify;
+}
+
+
+/* MEDIA QUERIES */
+
+/* Resoluciones de 1070px y mayores */
+@media only screen and (min-width: 1070px) {
+    .--fotoPerfil {
+        background-color: rgb(146, 41, 172);
+        padding: 3px;
+        position: absolute;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        top: -160px;
+        right: 2%;
+    }
+}
+
+/* Resoluciones de 1069px y menores */
+@media only screen and (max-width: 1069px) {
+    .--fotoPerfil {
+        background-color: rgb(146, 41, 172);
+        padding: 3px;
+        position: absolute;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100%;
+        top: -140px;
+        right: 1%;
+    }
+}
+
+/* Resoluciones de 993px y menores */
+@media only screen and (max-width: 993px) {
+    .--fotoPerfil {
+        background-color: rgb(146, 41, 172);
+        padding: 3px;
+        position: absolute;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 100%;
+        top: -75px;
+        right: 1%;
+    }
+}
+
+/* Resoluciones de 768px y menores */
+@media only screen and (max-width: 768px) {
+    .--fotoPerfil {
+        background-color: rgb(146, 41, 172);
+        padding: 3px;
+        position: absolute;
+        width: 130px;
+        object-fit: cover;
+        border-radius: 100%;
+        top: -75px;
+        right: 1%;
+    }
+}
+
+/* Resoluciones de 499px y menores */
+@media only screen and (max-width: 499px) {
+    .--fotoPerfil {
+        background-color: rgb(146, 41, 172);
+        padding: 3px;
+        position: absolute;
+        width: 110px;
+        object-fit: cover;
+        border-radius: 100%;
+        top: -60px;
+        right: 2%;
+    }
+}
+
+/* Resoluciones de 460px y menores */
+@media only screen and (max-width: 460px) {
+    .--fotoPerfil {
+        background-color: rgb(146, 41, 172);
+        padding: 3px;
+        position: absolute;
+        width: 80px;
+        object-fit: cover;
+        border-radius: 100%;
+        top: -60px;
+        right: 2%;
+    }
+}

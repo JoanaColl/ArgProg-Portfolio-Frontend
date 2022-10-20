@@ -1,0 +1,45 @@
+<app-header></app-header>
+
+<div class="container -contFORM">
+    <div class="row -rowESTILO -rowFORM">
+        <!-- INICIO TITULO -->
+        <h2>
+            <span class="-fontVIOLETA">.</span>
+            <span class="-fontAMARILLO">proyecto/new</span>
+        </h2>
+        <!-- FIN TITULO -->
+
+        <!-- INICIO FORMULARIO -->
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+               <div class="form-group">
+                    <label for="tituloPr">Título</label>
+                    <input type="text" class="form-control" id="tituloPr" name="tituloPr" [(ngModel)]="tituloPr" placeholder="Por ej. Portfolio" required>   
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPr">Descripción</label>
+                    <input type="text" class="form-control" id="descripcionPr" name="descripcionPr" [(ngModel)]="descripcionPr" placeholder="Por ej. Realizado en Angular" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgPr">Url de la imagen</label>
+                    <input type="text" class="form-control" id="imgPr" name="imgPr" [(ngModel)]="imgPr" placeholder="Por ej. https://img.freepik.com/foto-gratis/..." required>
+                </div>
+                <div class="form-group">
+                    <label for="repositorio">Url del repositorio</label>
+                    <input type="text" class="form-control" id="repositorio" name="repositorio" [(ngModel)]="repositorio" placeholder="Por ej. https://github.com/usuario/proyecto" required>
+                </div>
+
+                <!-- INICIO BOTON SUBMIT -->
+                <div class="-btnOK">
+                    <button class="btn btn-light botoncrudEstilo">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </button>
+                </div>     
+                <!-- FIN BOTON SUBMIT -->  
+            </form>
+        </div>
+        <!-- FIN FORMULARIO -->
+    </div>
+</div>
+
+<app-footer></app-footer>

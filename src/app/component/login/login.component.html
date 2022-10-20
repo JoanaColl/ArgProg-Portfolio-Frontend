@@ -1,0 +1,43 @@
+<div class="row">
+    <!-- INICIO MODAL HEADER -->
+    <div class="modal-header --modHEADER">
+        <!-- INICIO TITULO -->
+        <h2 class="modal-title">
+            <span class="-fontVIOLETA">.</span>
+            <span class="-fontAMARILLO">login</span>
+        </h2>
+        <!-- FIN TITULO -->
+
+        <!-- INICIO BOTON CERRAR VENTANA -->
+        <a href="#" class="-btnCRUD" (click)="activeModal.dismiss('Cross click')">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <!-- FIN BOTON CERRAR VENTANA -->
+    </div>
+    <!-- FIN MODAL HEADER -->
+
+    <!-- INICIO MODAL BODY -->
+    <div class="modal-body --modBODY">
+        <!-- INICIO FORMULARIO -->
+        <form (ngSubmit)="onLogin()" novalidate #f="ngForm">
+            <div class="form-outline form-white mb-4">
+                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required>
+                <label class="form-label" for="nombreUsuario">Usuario</label>
+            </div>
+            <div class="form-outline form-white mb-4">
+                <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required>
+                <label class="form-label" for="password">Contraseña</label>
+            </div>
+            
+            <!-- INICIO BOTON SUBMIT -->
+            <div class="-btnOK">
+                <button class="btn btn-light" type="submit">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </button>
+            </div>
+            <!-- FIN BOTON SUBMIT -->
+        </form>
+        <!-- FIN FORMULARIO -->
+    </div>
+    <!-- FIN MODAL BODY -->
+</div>

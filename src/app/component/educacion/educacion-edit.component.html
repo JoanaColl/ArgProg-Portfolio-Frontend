@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="container -contFORM" *ngIf="educacion">
+    <div class="row -rowESTILO -rowFORM">
+        <!-- INICIO TITULO -->
+        <h2>
+            <span class="-fontVIOLETA">.</span>
+            <span class="-fontAMARILLO">educacion/edit</span>
+        </h2>
+        <!-- FIN TITULO -->
+
+        <!-- INICIO FORMULARIO -->
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+               <div class="form-group">
+                    <label for="tituloEd">Título</label>
+                    <input type="text" class="form-control" id="tituloEd" name="tituloEd" [(ngModel)]="educacion.tituloEd" required>   
+                </div>
+                <div class="form-group">
+                    <label for="institucion">Institucion</label>
+                    <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="educacion.institucion" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha Inicio</label>
+                    <input type="number" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="educacion.fechaInicio" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaFin">Fecha Fin</label>
+                    <input type="number" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="educacion.fechaFin" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionEd">Descripción</label>
+                    <input type="text" class="form-control" id="descripcionEd" name="descripcionEd" [(ngModel)]="educacion.descripcionEd" required>
+                </div>
+
+                <!-- INICIO BOTON SUBMIT -->
+                <div class="-btnOK">
+                    <button class="btn btn-light botoncrudEstilo">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </button>
+                </div>       
+                <!-- FIN BOTON SUBMIT -->
+            </form>
+        </div>
+        <!-- FIN FORMULARIO -->
+    </div>
+</div>
+
+<app-footer></app-footer>

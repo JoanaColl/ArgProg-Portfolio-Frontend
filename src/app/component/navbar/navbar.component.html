@@ -1,0 +1,39 @@
+<div class="row">
+<nav class="navbar navbar-expand-lg navbar-dark mb-3 fixed-top">
+    <div class="container-fluid">
+        <!-- INICIO LOGO ARG PROG -->
+        <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">
+            <img src="../../../assets/logoAP.png" alt="" id="--logoAP"/>
+        </a>
+        <!-- FIN LOGO ARG PROG -->
+
+        <button class="navbar-toggler me-3" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+            &#9776;
+        </button>
+    
+        <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse justify-content-end ms-6">
+            <ul class="navbar-nav">
+                <!-- INICIO LOGOS REDES -->
+                <li class="nav-item pr-3">
+                    <a class="nav-link" (click)="isMenuCollapsed = true" href="https://github.com/jc-projects" target="_blank" class="nav-link">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" (click)="isMenuCollapsed = true" href="https://www.instagram.com/einenko" target="_blank" class="nav-link">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+                </li>
+                <!-- FIN LOGOS REDES -->
+                
+                <!-- INICIO BOTON LOGIN -->
+                <li class="nav-item active">
+                    <button type="button" class=" btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+                    <button type="button" class=" btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
+                </li>
+                <!-- FIN BOTON LOGIN -->
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>

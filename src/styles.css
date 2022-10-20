@@ -1,0 +1,271 @@
+/*
+CLASES PROPIAS
+---------------
+
+-tipoCARACTERISTICA: con un - se encuentra en styles.css. Por ej: -fontVIOLETA
+--tipoCARACTERISTICA: con dos - se encuentra en el css de ese componente --modHEADER
+
+*/
+
+
+
+/* BOTONES */
+.-btnOK {
+    display:flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.-btnCRUD i {
+    font-size: 18px;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #272822;
+    color: #ececec;
+    border-radius: 100%;
+}
+
+.-btnCRUD i:hover {
+    font-size: 18px;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #ececec;
+    color: #272822;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* FUENTES */
+.-fontVIOLETA {
+    color: #a349a4;
+}
+
+.-fontAMARILLO {
+    color: #ffc90e;
+}
+
+/* FORM */
+.-rowFORM {
+    border-radius: 0px 0px 30px 30px;
+    padding-bottom: 10px;
+}
+
+.-contFORM {
+    margin-bottom: 20px;
+}
+
+.-fontTITULO {
+    font-style: bold;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.-mb18PX {
+    margin-bottom: 18px;
+}
+
+/* MEDIA QUERIES */
+/* Resoluciones de 1070px y mayores */
+@media only screen and (min-width: 1070px) {
+    .-rowESTILO {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 1069px y menores */
+@media only screen and (max-width: 1069px) {
+    .-rowESTILO {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 993px y menores */
+@media only screen and (max-width: 993px) {
+    .-rowESTILO {
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 768px y menores */
+@media only screen and (max-width: 768px) {
+    .-rowESTILO {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 499px y menores */
+@media only screen and (max-width: 499px) {
+    .-rowESTILO {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+
+
+
+
+/* VIEJOS */
+
+/* YA ESTA */
+.btnCrud i {
+    font-size: 18px;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #272822;
+    color: #ececec;
+    border-radius: 100%;
+}
+
+/* YA ESTA */
+.btnCrud i:hover {
+    font-size: 18px;
+    width: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    background: #ececec;
+    color: #272822;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+/* YA ESTA */
+.derecha {
+    float: right;
+  }
+
+  /* YA ESTA */
+.letra-vio {
+    color: #a349a4;
+}
+
+/* YA ESTA */
+.letra-ama {
+    color: #ffc90e;
+}
+
+
+
+
+.lugarEstilo {
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.tituloEstilo {
+    font-style: bold;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+
+.fechaEstilo {
+    margin-bottom: 0px;
+}
+
+.ddDistinto {
+    margin-bottom: 18px;
+}
+
+body {
+    /* font-family: 'Anonymous Pro', monospace; */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+/* MEDIA QUERIES */
+/* Resoluciones de 1070px y mayores */
+@media only screen and (min-width: 1070px) {
+    .cuerpoEstilo {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 1069px y menores */
+@media only screen and (max-width: 1069px) {
+    .cuerpoEstilo {
+        padding-left: 48px;
+        padding-right: 48px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 993px y menores */
+@media only screen and (max-width: 993px) {
+    .cuerpoEstilo {
+        padding-left: 36px;
+        padding-right: 36px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 768px y menores */
+@media only screen and (max-width: 768px) {
+    .cuerpoEstilo {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}
+
+/* Resoluciones de 499px y menores */
+@media only screen and (max-width: 499px) {
+    .cuerpoEstilo {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        margin: 0px;
+        background-color: #272822;
+        color: #ececec;
+        position: relative;
+    }
+}

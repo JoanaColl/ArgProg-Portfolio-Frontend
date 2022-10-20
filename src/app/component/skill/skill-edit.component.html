@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="container -contFORM" *ngIf="skill">
+    <div class="row -rowESTILO -rowFORM">
+        <!-- INICIO TITULO -->
+        <h2>
+            <span class="-fontVIOLETA">.</span>
+            <span class="-fontAMARILLO">skill/edit</span>
+        </h2>
+        <!-- FIN TITULO -->
+
+        <!-- INICIO FORMULARIO -->
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+               <div class="form-group">
+                    <label for="nombreSk">Nombre</label>
+                    <input type="text" class="form-control" id="nombreSk" name="nombreSk" [(ngModel)]="skill.nombreSk" required>   
+                </div>
+                <div class="form-group">
+                    <label for="porcentaje">Porcentaje</label>
+                    <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje" required>
+                </div>
+
+                <!-- INICIO BOTON SUBMIT -->
+                <div class="-btnOK">
+                    <button class="btn btn-light">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </button>
+                </div>
+                <!-- FIN BOTON SUBMIT -->
+            </form>
+        </div>
+        <!-- FIN FORMULARIO -->
+    </div>
+</div>
+
+<app-footer></app-footer>

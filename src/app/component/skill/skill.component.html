@@ -1,0 +1,59 @@
+<div class="row -rowESTILO">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+    <!-- INICIO BOTON AGREGAR -->
+    <div class="float-end" *ngIf="isLogged">
+      <a href="#" class="-btnCRUD" routerLink="/skill-new">
+        <i class="fas fa-plus"></i>
+      </a>
+    </div>
+    <!-- FIN BOTON AGREGAR -->
+
+    <!-- INICIO TITULO -->
+    <h2>
+      <span class="-fontVIOLETA">.</span>
+      <span class="-fontAMARILLO">skills</span>
+    </h2>
+  </div>   
+  <!-- FIN TITULO -->
+
+  <!-- INICIO LISTA -->
+  <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-3 --circulo" *ngFor="let skill of skillArray">
+
+    <!-- INICIO DATOS -->
+    <circle-progress
+      [percent]="(skill.porcentaje)"   
+      [maxPercent]="100"
+      [showUnits]="false"
+      [title]="(skill.nombreSk)"
+      [showSubtitle]="false"
+      [titleColor]="'#ececec'"
+      [titleFontSize]="'15px'"
+      [titleFontWeight]="'400'"
+      [radius]="60"
+      [outerStrokeWidth]="6"
+      [innerStrokeWidth]="2"
+      [outerStrokeColor]="'#ececec'"
+      [innerStrokeColor]="'#ececec'"
+      [animation]="true"
+      [animationDuration]="800"
+      [showTitle]="true"
+      [showImage]="false"
+      [clockwise]="false"
+    ></circle-progress>
+    <!-- FIN DATOS -->
+
+    <!-- INICIO BOTON EDITAR Y BORRAR -->
+    <div class="float-end" *ngIf="isLogged">
+      <a href="#" class="-btnCRUD" routerLink="/skill-edit/{{skill.id}}">
+        <i class="fa fa-pen"></i>
+      </a>
+      <a href="#" class="-btnCRUD" (click)="delete(skill.id)">
+        <i class="fas fa-trash-alt"></i>
+      </a>
+    </div>
+    <!-- FIN BOTON EDITAR Y BORRAR -->
+
+  </div>
+  <!-- FIN LISTA -->
+</div>

@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+<div class="container -contFORM">
+    <div class="row -rowESTILO -rowFORM">
+        <!-- INICIO TITULO -->
+        <h2>
+            <span class="-fontVIOLETA">.</span>
+            <span class="-fontAMARILLO">experiencia/new</span>
+        </h2>
+        <!-- FIN TITULO -->
+
+        <!-- INICIO FORMULARIO -->
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+               <div class="form-group">
+                    <label for="tituloEx">Título</label>
+                    <input type="text" class="form-control" id="tituloEx" name="tituloEx" [(ngModel)]="tituloEx" placeholder="Por ej. Desarrollador Frontend" required>   
+                </div>
+                <div class="form-group">
+                    <label for="empleador">Empleador</label>
+                    <input type="text" class="form-control" id="empleador" name="empleador" [(ngModel)]="empleador" placeholder="Por ej. Google" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaInicio">Fecha Inicio</label>
+                    <input type="number" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="fechaInicio" placeholder="Por ej. 2020" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaFin">Fecha Fin</label>
+                    <input type="number" class="form-control" id="fechaFin" name="fechaFin" [(ngModel)]="fechaFin" placeholder="Por ej. 2022" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionEx">Descripción</label>
+                    <input type="text" class="form-control" id="descripcionEx" name="descripcionEx" [(ngModel)]="descripcionEx" placeholder="Por ej. Desarrollo y mantenimiento de páginas web..." required>
+                </div>
+
+                <!-- INICIO BOTON SUBMIT -->
+                <div class="-btnOK">
+                    <button class="btn btn-light">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </button>
+                </div>       
+                <!-- FIN BOTON SUBMIT -->
+            </form>
+        </div>
+        <!-- FIN FORMULARIO -->
+    </div>
+</div>
+
+<app-footer></app-footer>

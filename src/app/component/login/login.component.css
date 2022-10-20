@@ -1,0 +1,17 @@
+/*
+CLASES PROPIAS
+---------------
+
+-tipoCARACTERISTICA: con un - se encuentra en styles.css. Por ej: -fontVIOLETA
+--tipoCARACTERISTICA: con dos - se encuentra en el css de ese componente --modHEADER
+
+*/
+
+.--modHEADER {
+    background-color: #1e1f1c;
+}
+
+.--modBODY {
+    background-color: #272822;
+    color: #ececec;
+}
