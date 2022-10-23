@@ -4,6 +4,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { LoginUsuario } from 'src/app/model/login-usuario.model';
 import { AuthService } from 'src/app/service/auth.service';
 import { TokenService } from 'src/app/service/token.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -44,8 +45,19 @@ export class LoginComponent implements OnInit {
       }, err =>{
         this.isLogged = false;
         this.isLogginFail = true;
+        this.showError();
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
       })
+  }
+
+  showError(){
+    Swal.fire({
+      icon: 'error',
+      title: '¡Error!',
+      html: '<b>usuario</b> o <b>contraseña</b> inválidos',
+      showConfirmButton: false,
+      timer: 3000
+    })
   }
 }

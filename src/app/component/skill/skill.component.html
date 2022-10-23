@@ -18,7 +18,7 @@
   <!-- FIN TITULO -->
 
   <!-- INICIO LISTA -->
-  <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-3 --circulo" *ngFor="let skill of skillArray">
+  <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-2 --circulo" *ngFor="let skill of skillArray">
 
     <!-- INICIO DATOS -->
     <circle-progress
@@ -28,9 +28,9 @@
       [title]="(skill.nombreSk)"
       [showSubtitle]="false"
       [titleColor]="'#ececec'"
-      [titleFontSize]="'15px'"
+      [titleFontSize]="'11px'"
       [titleFontWeight]="'400'"
-      [radius]="60"
+      [radius]="70"
       [outerStrokeWidth]="6"
       [innerStrokeWidth]="2"
       [outerStrokeColor]="'#ececec'"
