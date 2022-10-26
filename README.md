@@ -42,7 +42,7 @@
     </li>
     <li><a href="#desarrollado">Desarrollado por...</a>
     <li><a href="#contacto">Contacto</a>
-    <li><a href="#contacto">Agradecimiento</a>
+    <li><a href="#agradecimiento">Agradecimiento</a>
   </ol>
 
 <!-- TECNOLOGÍAS UTILIZADAS -->
@@ -224,16 +224,14 @@
 <!-- DESARROLLADO POR -->
   <a name="desarrollado"></a>
   ## 💁 Desarrollado por...
-  * **Joana Coll** - [jc-projects](https://github.com/jc-projects)
-  
+  * **Joana Coll** - [jc-projects](https://github.com/jc-projects)  
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
   
 <!-- CONTACTO -->
   <a name="contacto"></a>
   ## 📩 Contacto
   Si deseas contactarte conmigo podes hacerlo mediante: 
-  **[Instagram ](https://instagram.com/einenko) - [Github ](https://github.com/jc-projects)** 
-  
+  **[Instagram ](https://instagram.com/einenko) - [Github ](https://github.com/jc-projects)**   
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
 
 <!-- AGRADECIMIENTO -->
@@ -243,6 +241,5 @@
   
   ¡Que tengas un lindo día!
   
-  Nana ✨
-  
+  Nana ✨ 
   <p align="right">(<a href="#ir-arriba">Ir arriba</a>)</p>
