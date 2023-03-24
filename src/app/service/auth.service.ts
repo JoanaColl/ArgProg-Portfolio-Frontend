@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { JwtDto } from '../model/jwt-dto.model';
@@ -11,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario.model';
 })
 export class AuthService {
 
-  URL = environment.URL + 'auth/';
+  URL = 'https://joana-coll.onrender.com/auth/';
   
   constructor(private httpClient: HttpClient) { }
 
